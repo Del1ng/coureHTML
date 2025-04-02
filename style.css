@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(160, 187, 211);
+    color: #333;
+}
+
+header {
+    background-color: #4A90E2;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav ul li :hover{
+    color: #333;
+    text-decoration: underline;
+}
+.banner {
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+.banner h1 {
+    font-size: 36px;
+
+}
+
+.popular-books {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 20px;
+    text-align: center;
+}
+.main-item{
+    display: flex;
+    justify-content: space-between;
+}
+.books {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    flex-wrap: wrap;
+}
+@media (max-width: 1366px) {
+    .books {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/*1280x720*/
+@media (max-width: 1280px) {
+    .books{
+        display: flex;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.book {
+    margin: 10px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+    text-align: center;
+}
+.book a{
+    text-decoration: none;
+    color: #333;
+}
+.book img {
+    width: 100%;
+    border-radius: 5px;
+}
+footer {
+    background-color: #4A90E2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+footer a{
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+footer  :after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+footer  :hover:after{
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    height: 2px; /* Высота линии */
+    background-color: red; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;
+}
+.book-list{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.book-list a{
+    text-decoration: none;
+    color: #333;
+}
+.grids{
+    display: flex;
+    justify-content: space-between;
+}
+/*1600×1050*/
+@media (max-width: 1600px) {
+    .book-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/*1366x768*/
+@media (max-width: 1366px) {
+    .book-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+/*1280x720*/
+@media (max-width: 1280px) {
+    .book-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+/*800×600*/
+@media (max-width: 800px) {
+    .book-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grids{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .catalog-media-centr{
+        display: flex;
+        justify-content: center;
+        max-width: 50%;
+    }
+}
+.catalogh2{
+    text-align: center;
+}
+.catalog-filter{
+    display: grid;
+    grid-template-rows: repeat(5, 0.05fr);
+    height: auto;
+    padding: 15px;
+    background-color: azure;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0.1);
+} 
+.abouts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bor{
+    margin: 10px;
+    border: #333 solid 1px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.privacy-policy p{
+    text-align: left;
+    margin-left: 300px;
+    color: #1f1e1e;
+}
+.privacy-policy a{
+    text-decoration: none;
+    color: #007bff;
+    transition: 0.4s;
+}
+.privacy-policy h3{
+    text-align: left;
+    margin-left: 300px;
+    color: #1a1919;
+}
