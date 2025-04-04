@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Deling store</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="basketh2"><h2>Корзина</h2></div>
+        <div class="basket-container">
+            <div class="basketall">
+                <div class="basket-items">
+                    <div>
+                        <img src="img/cee7314e-2648-4705-bc20-d94c5bdde5d0.webp" alt="Тени Неонового Города">
+                    </div>
+                    <div class="baskettext">
+                        <div>
+                            <h2>Тени Неонового Города</h2>
+                            <p><strong>Автор:</strong> Алекс Ривз</p>   
+                            <p>Количество: 1</p>
+                            <p>Цена: 560₴</p>
+                            <button class="baskettextbutt">Купить</button>
+                        </div>
+                        <div class="baskettextbutton">
+                            <button>Удалить</button>
+                        </div>
+                        
+                    </div>
+                        
+                </div>
+                <div class="basket-items">
+                    <div>
+                        <img src="img/e9723310-a8ca-4371-8ab1-56b807ed6619.webp" alt="Портал Вечности">
+                    </div>
+                    <div class="baskettext">
+                        <div>
+                            <h2>Портал Вечности"</h2>
+                            <p><strong>Автор:</strong> Лина Маркс</p>
+                            <p>Количество: 1</p>
+                            <p>Цена: 700₴</p>
+                            <button class="baskettextbutt">Купить</button>
+                        </div>
+                        <div class="baskettextbutton">
+                            <button>Удалить</button>
+                        </div>
+                        
+                    </div>
+                        
+                </div>
+                <div class="basket-items">
+                    <div>
+                        <img src="img/047d12e6-222a-4c0f-971c-7b551b1eac3a.webp" alt="Тень в Переулке">
+                    </div>
+                    <div class="baskettext">
+                        <div>
+                            <h2>Тень в Переулке</h2>
+                            <p><strong>Автор:</strong> Дэн Коллинз</p>   
+                            <p>Количество: 1</p>
+                            <p>Цена: 650₴</p>
+                            <button class="baskettextbutt">Купить</button>
+                        </div>
+                        <div class="baskettextbutton">
+                            <button>Удалить</button>
+                        </div>
+                        
+                    </div>
+                        
+                </div>
+            </div>
+        <div class="input-plase">
+            <h3 class="offh3">Оформление заказа</h3>
+            <div class="hide">
+                <p>Имя получателя</p>
+                <div class="form-group">
+                    <input type="text" placeholder="name">
+    
+                </div>
+                <p>Email</p>
+                <div class="form-group">
+    
+                    <input type="text" placeholder="Email">
+                </div>
+            </div>
+            <div class="hide">
+                <p>Доставка</p>
+                <div class="form-group">
+                    <input type="text" placeholder="city">
+    
+                </div>
+                <div class="form-group">
+    
+                    <input type="text" placeholder="post office">
+                </div>
+            </div>
+            <div>
+                <p>Оплата</p>
+                <div class="oplata">
+                    <input type="checkbox" value="Value"> 
+                    При получение
+                    <br>
+                    <input type="checkbox" value="Card"> 
+                    Онлайн
+                </div>
+                <div class="hide s">
+                    Номер карты:
+                    <input type="text" class="oplata" placeholder="credit card number">
+                </div>  
+            </div>
+            <div class="confrim"><button onclick="showConfrim()"  class="button-confrim">Оформить заказ</button></div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <P>&copy; 2025 Deling store. <a href="privacy.html">Все права защищены.</a></P>
+        <p>Контакты: example@email.com | Телефон: +380 967 371 175</p>
+
+    </footer>
+    <script>
+        function showConfrim(){
+            let result = confirm("Подтвердить?")
+            if (result){
+                alert("Вы оформили заказ")
+            }
+            else{
+                alert("Отмена ")
+            }
+        }
+    </script>
+</body>
+</html>

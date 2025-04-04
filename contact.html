@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="index.html">Deling store</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="contact">
+            <div class="contact-info">
+                <h2 style="font-family: Pacifico;">Свяжитесь с нами</h2>
+                <p><strong>Адрес:</strong> ул. Книжная, 10, Киев, Украина</p>
+                <p><strong>Телефон:</strong> +380 123 456 789</p>
+                <p><strong>Email:</strong> example@email.com</p>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Форма обратной связи</h2>
+                    <div>
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email">Ваш Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div>
+                        <label for="message">Ваше сообщение:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" onclick="showConfrim()">Отправить</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <P>&copy; 2025 Deling store. <a href="#">Все права защищены.</a></P>
+        <p>Контакты: example@email.com | Телефон: +380 967 371 175</p>
+
+    </footer>
+    <script>
+        function showConfrim(){
+            let result = confirm("Подтвердить отправку?")
+            if (result){
+                alert("Вы отправили сообщение")
+            }
+            else{
+                alert("Вы отменили отправку ")
+            }
+        }
+    </script>
+</body>
+</html>

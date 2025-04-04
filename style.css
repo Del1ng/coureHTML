@@ -18,8 +18,12 @@ header {
 .logo {
     font-size: 24px;
     font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
 }
-
+.logo a{
+    text-decoration: none;
+    color: white;
+}
 nav ul {
     list-style: none;
     padding: 0;
@@ -35,6 +39,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    font-family: Ponomar;
 }
 nav ul li :hover{
     color: #333;
@@ -48,7 +53,7 @@ nav ul li :hover{
 
 .banner h1 {
     font-size: 36px;
-
+    font-family: Roboto Condensed;
 }
 
 .popular-books {
@@ -157,6 +162,14 @@ footer  :hover:after{
     .book-list {
         grid-template-columns: repeat(4, 1fr);
     }
+    .grids{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .imag{
+        display: flex;
+        justify-content: center;
+    }
 }
 /*1280x720*/
 @media (max-width: 1280px) {
@@ -168,10 +181,6 @@ footer  :hover:after{
 @media (max-width: 800px) {
     .book-list {
         grid-template-columns: repeat(2, 1fr);
-    }
-    .grids{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
     }
     .catalog-media-centr{
         display: flex;
@@ -196,11 +205,15 @@ footer  :hover:after{
     justify-content: center;
     align-items: center;
 }
-.bor{
+.pan{
     margin: 10px;
-    border: #333 solid 1px;
+}
+.bor{
+    background-color: rgba(199, 239, 252, 0.692);
+    margin: 10px;
     padding: 10px;
     border-radius: 5px;
+    border: black solid 1px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .privacy-policy p{
@@ -217,4 +230,361 @@ footer  :hover:after{
     text-align: left;
     margin-left: 300px;
     color: #1a1919;
+}
+.contact-info, .contact-form {
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    padding-right: 40px;
+    background: rgb(132, 168, 199);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.contact-info h2 {
+    text-align: center;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+.general-info{
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    width: 100%;
+}
+/*1280x720*/
+@media (max-width: 1280px) {
+    .general-info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.general-info-img{
+    text-align: center;
+}
+.general-info-img img{
+    height: auto;
+    width: 90%;
+
+}
+.general-info-bar{
+    padding: 1%;
+    background-color: rgb(132, 168, 199);
+}   
+.general-info-bar h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+.general-info-bar p{
+    margin-top: 5%;
+}
+.general-info-bar h2{
+    margin-top: 15%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.general-info-bar p{
+    font-size: 20px;
+    text-align: left;
+}
+.label{
+    font-size: 20px;
+    text-align: left;
+    margin-top: 2%;
+}
+.general-info-bar button{
+    background-color: rgb(49, 132, 226);
+    border:  none;
+    width: 15%;
+    height: 8%;
+    font-size: 15px;
+    border-radius: 4px;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.general-info-bar button:hover{
+    background-color: #0157b4;
+}
+.general-info-text{
+    margin: 10px;
+}
+.general-info-text h2{
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 85%;
+    font-size: 15px;
+    text-align: left;
+}
+.stars{
+  color: gold;
+  font-size: 2em;
+  display: inline-block;
+}
+.book .price {
+    font-size: 18px;
+    color: #111;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.book button{
+    background-color: #5f90c5;
+    color: white;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+.book .out-of-stock {
+    color: red;
+    font-size: 14px;
+} 
+.book .in-stock {
+    color: rgb(20, 204, 51);
+    font-size: 14px;
+}  
+.searchbar{
+    width: 100%;
+    max-width: 600px;
+    margin: 20px;
+    display: flex;
+    margin-left: 0px;
+}
+.searchbar input{
+    padding: 8px;
+    border: 1px solid #a3a3a3;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+}
+.searchbar button{
+    background-color: #2e5681;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    width: 25%;
+    font-size: 16px;
+    transform: 0.3s;
+}
+.searchbar button:hover{
+    background-color: #1a3a5e;
+}
+.fix{
+    position: fixed;
+    top: 10%; 
+    left: 82%;
+    width: 100%; 
+}
+.pan{
+    padding: 10px;
+}
+.basketh2{
+    display: flex;
+    justify-content: center;
+}
+.baskettext{
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    color: #333;
+}
+.baskettextbutton{
+    display: grid;
+    grid-template-rows: 0.4fr 0.6fr;
+    color: #333;
+}
+.baskettext button{
+    background-color: #5f90c5;
+    color: white;
+    border-radius: 5px;
+}
+.baskettextbutt{
+    margin-top: 5%;
+    height: 10%;
+    width: 30%;
+}
+.baskettext button:hover{
+    background-color: #3c5b7c;
+}
+.baskettextbutton button{
+    background-color: rgb(158, 26, 26);
+    color: white;
+    border-radius: 5px;
+    height: 30%;
+}
+.baskettextbutton button:hover{
+    background-color: rgb(102, 21, 21);
+}
+
+.basket-container{
+    display: grid;
+    grid-template-columns: 0.7fr 0.3fr;
+    margin: 20px;
+}
+.basket-items{
+    width: 90%;
+    height: 30%;
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0.1);    
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
+}
+.basket-items img{
+    border-radius: 10px;
+    height: 90%;
+    width: 90%;
+    padding: 10px;
+}
+.basket-item button{
+    background-color: #5f90c5;
+    color: white;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding: 5px;
+}
+.basket-items a{
+    padding: 10px;
+    margin-left:100%;
+    text-decoration: none;
+    color: red;
+}
+.total{
+    background-color: rgb(152, 216, 163);
+    display: grid;
+    grid-template-columns: 1fr 0.05fr;
+    margin: 20px;
+    border: 1px solid rgb(0, 0, 0);
+    height: 50px;
+}
+.totalph{
+    display: flex;
+    align-items: center;
+}
+.totalp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.totaltotal{
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: white;
+
+}
+.totaltotaltotal{
+    display: flex;
+    border-right: 1px solid rgb(0, 0, 0);
+    align-items: center;
+    justify-content: center;
+}
+.input-plase{
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0.1);    
+}
+.oplata{
+    max-width: 50%;
+    margin: 7px;
+ }
+.confrim{
+    display: flex;
+    justify-content: end;
+}
+.button-confrim{
+    background-color: green;
+    padding: 1%;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0.1);
+}
+.input-plase {
+    border: black solid 1px;
+    padding-right: 30px;
+    height: 48%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.offh3 {
+text-align: center;
+font-size: 22px;
+color: #333;
+margin-bottom: 15px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.hide input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.3s;
+}
+.s{
+    display: flex;
+    flex-direction: column;
+}
+.s input{
+    margin-left: 0px;
+}
+.oplata {
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.confrim {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-confrim {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition:  0.3s;
+}
+
+.button-confrim:hover {
+    background: #0056b3;
 }
